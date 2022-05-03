@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-         Dilshod
+         Salom Dilshod
         </a>
       </header>
     </div>
