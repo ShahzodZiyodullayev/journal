@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Salom Reactjs
+          Salom
         </a>
       </header>
     </div>
