@@ -1,13 +1,23 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Second from "./components/Second";
-import First from "./components/First";
+import Shakl1 from "./components/Shakl1";
+import Shakl2 from "./components/Shakl2";
+import Shakl3 from "./components/Shakl3";
+import Shakl4 from "./components/Shakl4";
+import Shakl5 from "./components/Shakl5";
+import Shakl6 from "./components/Shakl6";
+import Shakl7 from "./components/Shakl7";
 
 function Router() {
   return (
     <Routes>
-      <Route path="/" element={<First />} />
-      <Route path="/second" element={<Second />} />
+      <Route path="/" element={<Shakl1 />} />
+      <Route path="/shakl2" element={<Shakl2 />} />
+      <Route path="/shakl3" element={<Shakl3 />} />
+      <Route path="/shakl4" element={<Shakl4 />} />
+      <Route path="/shakl5" element={<Shakl5 />} />
+      <Route path="/shakl6" element={<Shakl6 />} />
+      <Route path="/shakl7" element={<Shakl7 />} />
     </Routes>
   );
 }
