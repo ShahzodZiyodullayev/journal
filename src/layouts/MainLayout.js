@@ -180,7 +180,7 @@ function MainLayout(props) {
                           onClick={(e) => isActive(x.name)}
                           key={x.name}
                           style={{
-                            color: activePage === x ? "#F8F8F9" : "#BEB9CF",
+                            color: activePage === x.name ? "#F8F8F9" : "#BEB9CF",
                             textDecoration: "none",
                             fontSize: "30px",
                           }}
