@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Shakl1 from "./components/Shakl1";
-import Shakl2 from "./components/Shakl2";
+import Shakl1 from "./components/shakl1/Shakl1";
+import Shakl2 from "./components/shakl2/Shakl2";
 import Shakl3 from "./components/Shakl3";
 import Shakl4 from "./components/Shakl4";
 import Shakl5 from "./components/Shakl5";
