@@ -42,13 +42,13 @@ const DarsTaqsimlanishi = () => {
             <StyledTableRow
               key={item.id}
               sx={{ '&:last-child td, &:last-child th': {border:0 } }}
-            >
+            > 
               <StyledTableCell align="center">{item.id}</StyledTableCell>
               <StyledTableCell component="th" scope="row">{item.fanNomi}</StyledTableCell>
               <StyledTableCell align="center">{item.semestr1}</StyledTableCell>
               <StyledTableCell align="center">{item.semestr2}</StyledTableCell>
               <StyledTableCell align="center">{item.oqituvchiIsmi}</StyledTableCell>
-            </StyledTableRow>
+            </StyledTableRow> 
           ))}
         </TableBody>
       </Table>
