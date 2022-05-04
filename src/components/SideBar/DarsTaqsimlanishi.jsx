@@ -14,6 +14,16 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }));
 
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
+  '&:nth-of-type(odd)': {
+    backgroundColor: theme.palette.action.hover,
+  },
+  // hide last border
+  '&:last-child td, &:last-child th': {
+    border: 0,
+  },
+}));
+
 const DarsTaqsimlanishi = () => {
     return (  
         <TableContainer component={Paper}>
@@ -29,16 +39,16 @@ const DarsTaqsimlanishi = () => {
         </TableHead>
         <TableBody>
           {userData.map((item) => (
-            <TableRow
+            <StyledTableRow
               key={item.id}
               sx={{ '&:last-child td, &:last-child th': {border:0 } }}
             >
-              <TableCell align="center">{item.id}</TableCell>
-              <TableCell component="th" scope="row">{item.fanNomi}</TableCell>
-              <TableCell align="center">{item.semestr1}</TableCell>
-              <TableCell align="center">{item.semestr2}</TableCell>
-              <TableCell align="center">{item.oqituvchiIsmi}</TableCell>
-            </TableRow>
+              <StyledTableCell align="center">{item.id}</StyledTableCell>
+              <StyledTableCell component="th" scope="row">{item.fanNomi}</StyledTableCell>
+              <StyledTableCell align="center">{item.semestr1}</StyledTableCell>
+              <StyledTableCell align="center">{item.semestr2}</StyledTableCell>
+              <StyledTableCell align="center">{item.oqituvchiIsmi}</StyledTableCell>
+            </StyledTableRow>
           ))}
         </TableBody>
       </Table>
