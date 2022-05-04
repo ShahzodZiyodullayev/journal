@@ -10,7 +10,7 @@ function MainLayout(props) {
         {props.children}
       </Grid>
     </Grid>
-  );
+  ); 
 }
 
 export default MainLayout;
