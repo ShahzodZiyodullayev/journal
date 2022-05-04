@@ -3,7 +3,7 @@ import {
   Divider,
   Grid,
   Typography,
-  List,
+  List, 
   ListItemText,
   ListSubheader,
   ListItemIcon,
@@ -92,7 +92,7 @@ function Sidebar() {
   return (
     <>
       <Grid
-        backgroundColor="rgba(27, 28, 39, .5)"
+        backgroundColor="rgba(27, 28, 39, 0.5)"
         borderRadius="50%"
         position="absolute"
         width={30}
