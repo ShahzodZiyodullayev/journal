@@ -6,11 +6,11 @@ function MainLayout(props) {
   return (
     <Grid container>
       <Sidebar />
-      <Grid item sm={true} md={true} lg={true} height="100vh">
+      <Grid item sm={true} md={true} lg={true} height="100vh" overflow="scroll">
         {props.children}
       </Grid>
     </Grid>
-  ); 
+  );
 }
 
 export default MainLayout;

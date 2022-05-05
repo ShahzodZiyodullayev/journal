@@ -92,7 +92,7 @@ function Sidebar() {
   return (
     <>
       <Grid
-        backgroundColor="rgba(27, 28, 39, 0.5)"
+        backgroundColor="#0288D1"
         borderRadius="50%"
         position="absolute"
         width={30}
@@ -118,7 +118,7 @@ function Sidebar() {
         sm={4}
         md={3}
         lg={2}
-        backgroundColor="#1B1C1E"
+        backgroundColor="#0288D1"
         height="100vh"
         sx={{ display: !hide && "none" }}
       >
@@ -127,7 +127,7 @@ function Sidebar() {
             <Typography
               ml={5}
               fontSize="20px"
-              color="#8B8D93"
+              color="black"
               sx={{ cursor: "pointer" }}
             >
               <b
@@ -152,7 +152,7 @@ function Sidebar() {
             subheader={
               <ListSubheader
                 component="div"
-                sx={{ background: "#1B1C1E", color: "#8B8D93" }}
+                sx={{ background: "#0288D1", color: "black" }}
               >
                 Menu
               </ListSubheader>
@@ -165,7 +165,7 @@ function Sidebar() {
                     <Grid
                       onClick={(e) => active(i.id)}
                       style={{
-                        color: activeLink === i.id ? "#F8F8F9" : "#BEB9CF",
+                        color: activeLink === i.id ? "#F8F8F9" : "black",
                         textDecoration: "none",
                         fontSize: "30px",
                       }}
@@ -180,7 +180,7 @@ function Sidebar() {
                           },
                         }}
                       >
-                        <ListItemIcon sx={{ color: "#BEB9CF" }}>
+                        <ListItemIcon sx={{ color: "black" }}>
                           {i.icon}
                         </ListItemIcon>
                         <ListItemText sx={{ ml: -2 }}>
@@ -206,7 +206,7 @@ function Sidebar() {
                         onClick={(e) => isActive(x.name)}
                         key={x.name}
                         style={{
-                          color: activePage === x.name ? "#F8F8F9" : "#BEB9CF",
+                          color: activePage === x.name ? "#F8F8F9" : "black",
                           textDecoration: "none",
                           fontSize: "30px",
                         }}
@@ -226,7 +226,7 @@ function Sidebar() {
                                 },
                               }}
                             >
-                              <ListItemIcon sx={{ color: "#BEB9CF" }}>
+                              <ListItemIcon sx={{ color: "black" }}>
                                 <CircleOutlinedIcon sx={{ fontSize: 15 }} />
                               </ListItemIcon>
                               <ListItemText sx={{ ml: -2 }}>
