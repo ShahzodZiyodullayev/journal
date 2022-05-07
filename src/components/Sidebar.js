@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Divider,
   Grid,
   Typography,
   List, 
@@ -73,17 +72,23 @@ function Sidebar() {
       id: 4,
       name: "shakl 4",
       subname: [
-        { name: "O'quvchilarni baholash, davomat", route: "/shakl4" },
-        { name: "O'tilgan mashg'ulotlar mavzusi", route: "/shakl5" },
-      ],
+        {name: "O'quvchilarni baholash, davomat/O'tilgan mashg'ulotlar mavzusi", route: "/shakl4" }],
       icon: <ApiOutlinedIcon />,
     },
     {
       id: 5,
       name: "shakl 5",
       subname: [
-        { name: "Xavfsizlik texnikasi", route: "/shakl6" },
-        { name: "Qoidalar bo'yicha ko'rsatmalar", route: "/shakl7" },
+        { name: "Mexnat muhofazasi, Xavfsizlik texnikasi", route: "/shakl5" },
+        { name: "Qoidalar bo'yicha ko'rsatmalar qaydnomasi", route: "/shakl6" },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 6,
+      name: "shakl 6",
+      subname: [
+        { name: "O'quv amaliyotda o'uvchilarni baholash, davomat", route: "/shakl7" }
       ],
       icon: <ApiOutlinedIcon />,
     },
@@ -118,7 +123,7 @@ function Sidebar() {
         sm={4}
         md={3}
         lg={2}
-        backgroundColor="#0288D1"
+        backgroundColor="#5E6679"
         height="100vh"
         sx={{ display: !hide && "none" }}
       >
@@ -144,15 +149,12 @@ function Sidebar() {
           </Link>
         </Grid>
         <Grid>
-          <Divider variant="middle" color="#BEB9CF" />
-        </Grid>
-        <Grid>
           <List
             component="nav"
             subheader={
               <ListSubheader
                 component="div"
-                sx={{ background: "#0288D1", color: "black" }}
+                sx={{ background: "#0288D1", color: "#fff" }}
               >
                 Menu
               </ListSubheader>
@@ -165,7 +167,7 @@ function Sidebar() {
                     <Grid
                       onClick={(e) => active(i.id)}
                       style={{
-                        color: activeLink === i.id ? "#F8F8F9" : "black",
+                        color: activeLink === i.id ? "#F8F8F9" : "#fff",
                         textDecoration: "none",
                         fontSize: "30px",
                       }}
@@ -176,11 +178,11 @@ function Sidebar() {
                           borderLeft:
                             activeLink === i.id ? "2px solid #F8F8F9" : "none",
                           "&:hover": {
-                            background: "rgba(100, 100, 100, .5)",
+                            background: "#0288D1",
                           },
                         }}
                       >
-                        <ListItemIcon sx={{ color: "black" }}>
+                        <ListItemIcon sx={{ color: "#fff" }}>
                           {i.icon}
                         </ListItemIcon>
                         <ListItemText sx={{ ml: -2 }}>
@@ -206,7 +208,7 @@ function Sidebar() {
                         onClick={(e) => isActive(x.name)}
                         key={x.name}
                         style={{
-                          color: activePage === x.name ? "#F8F8F9" : "black",
+                          color: activePage === x.name ? "#F8F8F9" : "#fff",
                           textDecoration: "none",
                           fontSize: "30px",
                         }}
@@ -222,11 +224,11 @@ function Sidebar() {
                               sx={{
                                 pl: 4,
                                 "&:hover": {
-                                  background: "rgba(100, 100, 100, .5)",
+                                  background: "#7B8396",
                                 },
                               }}
                             >
-                              <ListItemIcon sx={{ color: "black" }}>
+                              <ListItemIcon sx={{ color: "#fff" }}>
                                 <CircleOutlinedIcon sx={{ fontSize: 15 }} />
                               </ListItemIcon>
                               <ListItemText sx={{ ml: -2 }}>
