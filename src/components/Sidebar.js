@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
-  Divider,
   Grid,
   Typography,
-  List, 
+  List,
   ListItemText,
   ListSubheader,
   ListItemIcon,
@@ -73,8 +72,30 @@ function Sidebar() {
       id: 4,
       name: "shakl 4",
       subname: [
-        { name: "O'quvchilarni baholash, davomat", route: "/shakl4" },
-        { name: "O'tilgan mashg'ulotlar mavzusi", route: "/shakl5" },
+        {
+          name: "O'quvchilarni baholash, davomat/O'tilgan mashg'ulotlar mavzusi",
+          route: "/shakl4",
+        },
+        {
+          name: "O'quvchilarni baholash, davomat/O'tilgan mashg'ulotlar mavzus",
+          route: "/shakl22",
+        },
+        {
+          name: "O'quvchilarni baholash, davomat/O'tilgan mashg'ulotlar mavzu",
+          route: "/shakl23",
+        },
+        {
+          name: "O'quvchilarni baholash, davomat/O'tilgan mashg'ulotlar mavz",
+          route: "/shakl24",
+        },
+        {
+          name: "O'quvchilarni baholash, davomat/O'tilgan mashg'ulotlar mav",
+          route: "/shakl25",
+        },
+        {
+          name: "O'quvchilarni baholash, davomat/O'tilgan mashg'ulotlar ma",
+          route: "/shakl26",
+        },
       ],
       icon: <ApiOutlinedIcon />,
     },
@@ -82,12 +103,150 @@ function Sidebar() {
       id: 5,
       name: "shakl 5",
       subname: [
-        { name: "Xavfsizlik texnikasi", route: "/shakl6" },
-        { name: "Qoidalar bo'yicha ko'rsatmalar", route: "/shakl7" },
+        { name: "Mexnat muhofazasi, Xavfsizlik texnikasi", route: "/shakl5" },
+        { name: "Qoidalar bo'yicha ko'rsatmalar qaydnomasi", route: "/shakl6" },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 6,
+      name: "shakl 6",
+      subname: [
+        {
+          name: "O'quv amaliyotda o'uvchilarni baholash, davomat",
+          route: "/shakl7",
+        },
+        {
+          name: "O'quv amaliyotda o'uvchilarni baholash, davoma",
+          route: "/shakl8",
+        },
+        {
+          name: "O'quv amaliyotda o'uvchilarni baholash, davom",
+          route: "/shakl9",
+        },
+        {
+          name: "O'quv amaliyotda o'uvchilarni baholash, davo",
+          route: "/shakl10",
+        },
+        {
+          name: "O'quv amaliyotda o'uvchilarni baholash, dav",
+          route: "/shakl11",
+        },
+        {
+          name: "O'quv amaliyotda o'uvchilarni baholash, da",
+          route: "/shakl12",
+        },
+        {
+          name: "O'quv amaliyotda o'uvchilarni baholash, d",
+          route: "/shakl13",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 7,
+      name: "shakl 7",
+      subname: [
+        {
+          name: "Kurs ishlar qaydnomasi",
+          route: "/shakl15",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 8,
+      name: "shakl 8",
+      subname: [
+        {
+          name: "Ishlab chiqarish va diplom oldi amaliyotlar mavzusi",
+          route: "/shakl16",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 9,
+      name: "shakl 9",
+      subname: [
+        {
+          name: "Ishlab chiqarish va diplom oldi amaliyotlar qaydnomasi",
+          route: "/shakl16",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 10,
+      name: "shakl 10",
+      subname: [
+        {
+          name: "Fan (modul)idan yakuniy attestatsiya natijalari",
+          route: "/shakl17",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 11,
+      name: "shakl 11",
+      subname: [
+        {
+          name: "Kvalifikatsiya bo'yicha amaliy imtihon (taqdimot) natijalari",
+          route: "/shakl18",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 12,
+      name: "shakl 12",
+      subname: [
+        {
+          name: "O'quvchilar o'zlashtirish ko'rsatkichlarining fanlar bo'yicha yakuniy yig'ma qaydnomasi",
+          route: "/shakl18",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 13,
+      name: "shakl 13",
+      subname: [
+        {
+          name: "Bitiruv malakaviy (diplom) ishining himoyasi natijasi",
+          route: "/shakl19",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 14,
+      name: "shakl 14",
+      subname: [
+        {
+          name: "O'quvchilar tomonidan qoldirilgan dars soatlari hisobi",
+          route: "/shakl20",
+        },
+      ],
+      icon: <ApiOutlinedIcon />,
+    },
+    {
+      id: 15,
+      name: "shakl 15",
+      subname: [
+        {
+          name: "Jurnalning yuritilishi yuzasidan nazoratchilar tomonidan bildirilgan kamchiliklar va takliflar",
+          route: "/shakl21",
+        },
       ],
       icon: <ApiOutlinedIcon />,
     },
   ];
+
+  useEffect(() => {
+    setActivePage(links[0].subname[0].name);
+  }, []);
 
   return (
     <>
@@ -118,9 +277,20 @@ function Sidebar() {
         sm={4}
         md={3}
         lg={2}
-        backgroundColor="#0288D1"
+        backgroundColor="#5E6679"
         height="100vh"
-        sx={{ display: !hide && "none" }}
+        overflow="scroll"
+        sx={{
+          overflowX: "hidden",
+          display: !hide && "none",
+          "::-webkit-scrollbar": {
+            width: "7px",
+          },
+          "::-webkit-scrollbar-thumb": {
+            background: "#0288D1",
+            borderRadius: "5px",
+          },
+        }}
       >
         <Grid p={1.5} display="flex" alignItems="center">
           <Link to="/" style={{ textDecoration: "none" }}>
@@ -144,15 +314,12 @@ function Sidebar() {
           </Link>
         </Grid>
         <Grid>
-          <Divider variant="middle" color="#BEB9CF" />
-        </Grid>
-        <Grid>
           <List
             component="nav"
             subheader={
               <ListSubheader
                 component="div"
-                sx={{ background: "#0288D1", color: "black" }}
+                sx={{ background: "#5E6679", color: "#fff" }}
               >
                 Menu
               </ListSubheader>
@@ -165,7 +332,7 @@ function Sidebar() {
                     <Grid
                       onClick={(e) => active(i.id)}
                       style={{
-                        color: activeLink === i.id ? "#F8F8F9" : "black",
+                        color: activeLink === i.id ? "#F8F8F9" : "#fff",
                         textDecoration: "none",
                         fontSize: "30px",
                       }}
@@ -176,11 +343,11 @@ function Sidebar() {
                           borderLeft:
                             activeLink === i.id ? "2px solid #F8F8F9" : "none",
                           "&:hover": {
-                            background: "rgba(100, 100, 100, .5)",
+                            background: "#0288D1",
                           },
                         }}
                       >
-                        <ListItemIcon sx={{ color: "black" }}>
+                        <ListItemIcon sx={{ color: "#fff" }}>
                           {i.icon}
                         </ListItemIcon>
                         <ListItemText sx={{ ml: -2 }}>
@@ -206,7 +373,7 @@ function Sidebar() {
                         onClick={(e) => isActive(x.name)}
                         key={x.name}
                         style={{
-                          color: activePage === x.name ? "#F8F8F9" : "black",
+                          color: activePage === x.name ? "#333" : "#fff",
                           textDecoration: "none",
                           fontSize: "30px",
                         }}
@@ -222,11 +389,16 @@ function Sidebar() {
                               sx={{
                                 pl: 4,
                                 "&:hover": {
-                                  background: "rgba(100, 100, 100, .5)",
+                                  background: "#7B8396",
                                 },
                               }}
                             >
-                              <ListItemIcon sx={{ color: "black" }}>
+                              <ListItemIcon
+                                sx={{
+                                  color:
+                                    activePage === x.name ? "#333" : "#fff",
+                                }}
+                              >
                                 <CircleOutlinedIcon sx={{ fontSize: 15 }} />
                               </ListItemIcon>
                               <ListItemText sx={{ ml: -2 }}>
