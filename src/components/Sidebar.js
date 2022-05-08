@@ -80,7 +80,7 @@ function Sidebar() {
       name: "shakl 5",
       subname: [
         { name: "Mexnat muhofazasi, Xavfsizlik texnikasi", route: "/shakl5" },
-        { name: "Qoidalar bo'yicha ko'rsatmalar qaydnomasi", route: "/shakl6" },
+        { name: "Qoidalar bo'yicha ko'rsatmalar qaydnomasi", route: "/shakl5_1" },
       ],
       icon: <ApiOutlinedIcon />,
     },
@@ -88,7 +88,7 @@ function Sidebar() {
       id: 6,
       name: "shakl 6",
       subname: [
-        { name: "O'quv amaliyotda o'uvchilarni baholash, davomat", route: "/shakl7" }
+        { name: "O'quv amaliyotda o'uvchilarni baholash, davomat", route: "/shakl6" }
       ],
       icon: <ApiOutlinedIcon />,
     },

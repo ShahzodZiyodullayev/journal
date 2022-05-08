@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
+
 
 function Shakl6() {
   return (
-    <div>Xavfsizlik texnikasi</div>
+    <div>dfd</div>
   )
 }
 

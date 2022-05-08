@@ -23,3 +23,20 @@
   border-collapse: collapse;
   padding: 3px;
 }
+
+.shakl5_1_table table {
+  border: 1px solid #0288d1;
+  border-collapse: collapse;
+}
+.shakl5_1_table th {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  padding: 10px;
+  background: #0288d1;
+  color: #fff;
+}
+.shakl5_1_table td {
+  border: 1px solid #0288d1;
+  border-collapse: collapse;
+  padding: 3px;
+}
