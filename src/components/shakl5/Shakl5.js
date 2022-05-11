@@ -9,7 +9,7 @@ function Shakl5() {
         <Grid lg={12} textAlign="center" padding={2} marginBottom={2}>
             <h2 style={{color:"#0288D1"}}>MEHNAT MUHOFAZASI, XAVSIZLIK TEXNIKASI VA HAYOT XAVSIZLIGI</h2>
         </Grid>
-        <Grid className='shakl5_table' lg={12}>
+        <Grid className='shakl5_table' align="center" lg={12}>
            <table>
              <thead>
                <tr>

@@ -113,31 +113,31 @@ function Sidebar() {
       name: "shakl 6",
       subname: [
         {
-          name: "O'quv amaliyotda o'uvchilarni baholash, davomat",
-          route: "/shakl7",
+          name: "Chilangarlik ishi",
+          route: "/shakl6",
         },
         {
-          name: "O'quv amaliyotda o'uvchilarni baholash, davoma",
+          name: "O'quv amaliyotda o'quvchilarni baholash, davoma",
           route: "/shakl8",
         },
         {
-          name: "O'quv amaliyotda o'uvchilarni baholash, davom",
+          name: "O'quv amaliyotda o'quvchilarni baholash, davom",
           route: "/shakl9",
         },
         {
-          name: "O'quv amaliyotda o'uvchilarni baholash, davo",
+          name: "O'quv amaliyotda o'quvchilarni baholash, davo",
           route: "/shakl10",
         },
         {
-          name: "O'quv amaliyotda o'uvchilarni baholash, dav",
+          name: "O'quv amaliyotda o'quvchilarni baholash, dav",
           route: "/shakl11",
         },
         {
-          name: "O'quv amaliyotda o'uvchilarni baholash, da",
+          name: "O'quv amaliyotda o'quvchilarni baholash, da",
           route: "/shakl12",
         },
         {
-          name: "O'quv amaliyotda o'uvchilarni baholash, d",
+          name: "O'quv amaliyotda o'quvchilarni baholash, d",
           route: "/shakl13",
         },
       ],
@@ -149,7 +149,7 @@ function Sidebar() {
       subname: [
         {
           name: "Kurs ishlar qaydnomasi",
-          route: "/shakl15",
+          route: "/shakl7",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -414,7 +414,7 @@ function Sidebar() {
                   <Link
                     onClick={(e) => active(i.id)}
                     style={{
-                      color: activeLink === i.id ? "#F8F8F9" : "#BEB9CF",
+                      color: activeLink === i.id ? "#fff" : "#BEB9CF",
                       textDecoration: "none",
                       fontSize: "30px",
                     }}
