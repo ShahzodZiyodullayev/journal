@@ -160,7 +160,7 @@ function Sidebar() {
       subname: [
         {
           name: "Ishlab chiqarish va diplom oldi amaliyotlar mavzusi",
-          route: "/shakl16",
+          route: "/shakl8",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -171,7 +171,7 @@ function Sidebar() {
       subname: [
         {
           name: "Ishlab chiqarish va diplom oldi amaliyotlar qaydnomasi",
-          route: "/shakl16",
+          route: "/shakl9",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -182,7 +182,7 @@ function Sidebar() {
       subname: [
         {
           name: "Fan (modul)idan yakuniy attestatsiya natijalari",
-          route: "/shakl17",
+          route: "/shakl10",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -193,7 +193,7 @@ function Sidebar() {
       subname: [
         {
           name: "Kvalifikatsiya bo'yicha amaliy imtihon (taqdimot) natijalari",
-          route: "/shakl18",
+          route: "/shakl11",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -204,7 +204,7 @@ function Sidebar() {
       subname: [
         {
           name: "O'quvchilar o'zlashtirish ko'rsatkichlarining fanlar bo'yicha yakuniy yig'ma qaydnomasi",
-          route: "/shakl18",
+          route: "/shakl12",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -215,7 +215,7 @@ function Sidebar() {
       subname: [
         {
           name: "Bitiruv malakaviy (diplom) ishining himoyasi natijasi",
-          route: "/shakl19",
+          route: "/shakl13",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -226,7 +226,7 @@ function Sidebar() {
       subname: [
         {
           name: "O'quvchilar tomonidan qoldirilgan dars soatlari hisobi",
-          route: "/shakl20",
+          route: "/shakl14",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -237,7 +237,7 @@ function Sidebar() {
       subname: [
         {
           name: "Jurnalning yuritilishi yuzasidan nazoratchilar tomonidan bildirilgan kamchiliklar va takliflar",
-          route: "/shakl21",
+          route: "/shakl15",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -251,7 +251,7 @@ function Sidebar() {
   return (
     <>
       <Grid
-        backgroundColor="#0288D1"
+        backgroundColor="transparent"
         borderRadius="50%"
         position="absolute"
         width={30}
@@ -265,7 +265,7 @@ function Sidebar() {
       >
         <MenuIcon
           cursor="pointer"
-          sx={{ marginLeft: !hide && "23px", color: "#F8F8F9" }}
+          sx={{ marginLeft: !hide && "23px", color: "black" }}
         />
         <CloseIcon
           cursor="pointer"

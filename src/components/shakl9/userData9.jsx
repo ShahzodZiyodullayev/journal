@@ -1,0 +1,344 @@
+const userData = [
+    {
+        id:"1",
+        name:"Abdunazarov",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"2",
+        name:"Abdurashidov",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"3",
+        name:"Alimov B",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"4",
+        name:"Amirov Sh",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"5",
+        name:"Asadov A",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"6",
+        name:"Bafoyev I",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"7",
+        name:"Baxtiyorov",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"8",
+        name:"Egamberdiyev",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"9",
+        name:"Ergashev",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"10",
+        name:"Ergashev Sh",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"11",
+        name:"Ergashev S",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+    },
+    {
+        id:"12",
+        name:"Eshonqulov S",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"13",
+        name:"Ismatilloyev G'",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"14",
+        name:"Jurabayev X",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"15",
+        name:"Meliyev H",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"16",
+        name:"Misirov E",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"17",
+        name:"Musayev M",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"18",
+        name:"Muzaffarov B",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"19",
+        name:"Narzullayev A",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"20",
+        name:"Nasretdinov Sh",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"21",
+        name:"Norqobilov M",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"22",
+        name:"Nuraliyev Sh",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"23",
+        name:"O'roqov S",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"24",
+        name:"O'roqov T",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"25",
+        name:"Qahramonov F",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"26",
+        name:"Sahripov D",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"27",
+        name:"Toshbotirov O",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"28",
+        name:"Tursunov O",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"29",
+        name:"Uzoqov B",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"30",
+        name:"Uzoqov N",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"31",
+        name:"Xaitov A",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"32",
+        name:"Xudoynazarov X",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"33",
+        name:"Yo'ldoshev Y",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      },
+      {
+        id:"34",
+        name:"Yoshiuzoqov O",
+        joynomi:'',
+        manzil:'',
+        boshsana:'',
+        yaksana:'',
+        yakball:'',
+        imzo:''
+      }
+];
+
+export default userData;
