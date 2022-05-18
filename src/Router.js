@@ -1,12 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 import Shakl1 from "./components/shakl1/Shakl1";
 import Shakl10 from "./components/shakl10/Shakl10";
 import Shakl11 from "./components/shakl11/Shakl11";
 import Shakl12 from "./components/shakl12/Shakl12";
 import Shakl13 from "./components/shakl13/Shakl13";
 import Shakl14 from "./components/shakl14/Shakl14";
-import Shakl15 from "./components/shakl5/Shakl5";
+import Shakl15 from "./components/shakl15/Shakl15";
 import Shakl2 from "./components/shakl2/Shakl2";
 import Shakl3 from "./components/shakl3/Shakl3";
 import Shakl4 from "./components/shakl4/Shakl4";
@@ -19,7 +20,7 @@ import Shakl9 from "./components/shakl9/Shakl9";
 function Router() {
   return (
     <Routes>
-      <Route path="/" element={<Shakl1 />} />
+      <Route path="/shakl1" element={<Shakl1 />} />
       <Route path="/shakl2" element={<Shakl2 />} />
       <Route path="/shakl3" element={<Shakl3 />} />
       <Route path="/shakl4" element={<Shakl4 />} />
