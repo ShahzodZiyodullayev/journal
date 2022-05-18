@@ -51,7 +51,7 @@ function Sidebar() {
       subname: [
         {
           name: "Fanlar (modul) bo'yicha dars soatlarining taqsimlanishi",
-          route: "/",
+          route: "/shakl1",
         },
       ],
       icon: <ApiOutlinedIcon />,
@@ -278,7 +278,7 @@ function Sidebar() {
         md={3}
         lg={2}
         backgroundColor="#5E6679"
-        height="100vh"
+        height="90vh"
         overflow="scroll"
         sx={{
           overflowX: "hidden",

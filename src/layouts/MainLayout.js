@@ -1,17 +1,20 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
 import Sidebar from "../components/Sidebar";
+import Header from "../components/header/Header";
 
 function MainLayout(props) {
   return (
+    <>
+    <Header />
     <Grid container>
-      <Sidebar />
-      <Grid
+       <Sidebar />
+       <Grid
         item
         sm={true}
         md={true}
         lg={true}
-        height="100vh"
+        height="90vh"
         overflow="scroll"
         sx={{
           overflowX: "hidden",
@@ -23,10 +26,11 @@ function MainLayout(props) {
             borderRadius: "5px",
           },
         }}
-      >
+        >
         {props.children}
       </Grid>
     </Grid>
+    </>
   );
 }
 
